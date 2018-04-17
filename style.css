@@ -1,0 +1,113 @@
+@font-face {
+  font-family: AvenirLTStd-Book;
+  src: url('AvenirLTStd-Book.otf');
+}
+
+@font-face {
+  font-family: AvenirLTStd-Light;
+  src: url('AvenirLTStd-Light.otf');
+}
+
+@font-face {
+  font-family: AvenirLTStd-Roman;
+  src: url('AvenirLTStd-Roman.otf');
+}
+
+body {
+  font-family: 'AvenirLTStd-Light', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(141deg, #ffb347 0%, #fff687 75%);
+  opacity: 0.95;
+}
+
+p {
+  font-family: 'AvenirLTStd-Light', sans-serif;
+  color: #6b6b6b;
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-top: 2em;
+}
+
+.moviecard {
+  margin-top: 4em;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  opacity: 0.95;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+  /* transition: 10s;
+  animation-timing-function:ease-in-out; */
+}
+
+aside {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+aside>h2 {
+  font-weight: 100;
+  font-size: 1em;
+}
+
+h1 {
+  margin-left: 2em;
+}
+
+h2 {
+  margin-right: 3em;
+}
+
+h3 {
+  text-transform: capitalize;
+  margin-right: 0.4em;
+}
+
+button {
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1em;
+  height: 50px;
+  width: 50px;
+  fill: #ebebeb;
+}
+
+button:hover {
+  fill: pink;
+}
+
+path:hover {
+  border: 2px solid pink;
+}
+
+.clicked {
+  fill: #d41b1b;
+}
+
+.hideElement {
+  display: none;
+  transition: all 5s ease-in-out;
+}
+
+.readMore {
+  width: 150px;
+  height: 38px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  transition: all .3s ease-out;
+}
+
+.readMore:hover {
+  transform: translate(0, -5px);
+}
